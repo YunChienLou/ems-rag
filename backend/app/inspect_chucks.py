@@ -35,7 +35,7 @@ def inspect_my_chunks():
         # 隨便撈出前 2 筆點資料 (Points)
         results, _ = qdrant_client.scroll(
             collection_name=COLLECTION_NAME,
-            limit=2,
+            limit=5,
             with_payload=True,
             with_vectors=False
         )
